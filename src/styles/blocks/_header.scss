@@ -1,0 +1,47 @@
+@use "../../helpers/functions.scss" as *;
+@use "../variables.scss";
+
+.header {
+    display: flex;
+    margin: rem(32) rem(109);
+    font-size: rem(16);
+    font-weight: 400;
+    color: var(--font-color);
+    align-items: baseline;
+
+    & ul {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    gap: rem(16);
+    }
+
+    & a {
+        text-decoration: none;
+        color: var(--font-color);
+    }
+
+    & nav {
+        margin-left: auto;
+    }
+
+    &__nav {
+
+        &--active {
+            color: var(--color-accent);
+        }
+    }
+
+    &__button {
+        border: 1px solid var(--border-color);
+        padding: rem(19) rem(25);
+        border-radius: rem(12);
+
+        &--active {
+            border-radius: rem(12);
+            background-color: var(--color-accent);
+            color: #fff !important ;
+            padding: rem(19) rem(25);
+        }
+    }
+}
