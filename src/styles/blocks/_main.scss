@@ -2,11 +2,13 @@
 @use "../variables.scss";
 
 .main {
-display: flex;      
+    display: flex;
+    max-height: rem(1000);
     
     &__right {
         position: static;
         margin-top: -32px;
+        margin-left: auto;
 
         & :first-child {
             width: rem(602);
@@ -23,11 +25,11 @@ display: flex;
         }
     } 
     
-    
     &__left {
-        display: block;
+        display: flex;
+        flex-direction: column;
         margin: rem(109) rem(163);
-        
+        max-height: rem(800);
 
         & a {
             text-decoration: none;
@@ -63,6 +65,12 @@ display: flex;
             display: flex;
             gap: rem(27);
             align-items: baseline;
+            
+        }
+
+        &__break {
+            margin: rem(60) 0px;
+            max-width: rem(500);
         }
 
         &__button {
@@ -86,6 +94,29 @@ display: flex;
                 background-color: var(--accent-color);
                 align-items: center;
                 justify-content: center;
+            }
+        }
+
+        &__advantages {
+            display: flex;
+            flex-direction: row;
+            gap: rem(35);
+
+
+            & p:first-child {
+                font-size: rem(50);
+                font-weight: 700;
+
+                &::after {
+                    content: "+";
+                    color: var(--accent-color);
+                }
+            }
+
+            & p:last-child {
+                color: #656565;
+                font-size: rem(18);
+                font-weight: 400;
             }
 
         }

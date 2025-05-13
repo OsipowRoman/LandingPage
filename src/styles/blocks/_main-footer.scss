@@ -1,0 +1,36 @@
+@use "../../helpers/functions.scss" as *;
+@use "../variables.scss";
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: rem(140);
+
+    & p {
+        font-weight: 400;
+        font-size: rem(20);
+        color: #656565;
+    }
+
+    & div {
+        display: flex;
+        gap: rem(88);
+        padding: 0px rem(100);
+    }
+
+    & img {
+        width: rem(239);
+        height: rem(43);
+    }
+
+    
+}
+
+.section-hr {
+    max-width: rem(1200);
+    color: #656565;
+    margin-top: rem(140);
+    margin-bottom: rem(200);
+
+}

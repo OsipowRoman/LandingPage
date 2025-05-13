@@ -3,9 +3,12 @@
 @use "../src/fonts/fonts.scss";
 @use "./styles/blocks/header";
 @use "./styles/blocks/main";
-
+@use "./styles/blocks/main-footer";
+@use "./styles/blocks/delivery";
+@use "./styles/blocks/restaurant";
 
 * {
     font-family: "Roboto";
     background-color: var(--background-color);
 }
+

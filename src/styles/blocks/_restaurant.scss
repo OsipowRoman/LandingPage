@@ -1,0 +1,55 @@
+@use "../../helpers/functions.scss" as *;
+@use "../variables.scss";
+
+.restaurant {
+    display: flex;
+    flex-direction: row;
+    margin: 0px rem(109);
+
+    & p:last-child {
+        font-weight: 400;
+        font-size: rem(14);
+        line-height: rem(30);
+        letter-spacing: 0%;
+        color: #656565;
+    }
+
+    &__left {
+       
+        &__advantages {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: rem(48);
+            row-gap: rem(48);
+
+            &__item {
+              
+            }
+        }
+
+        & p:first-child {
+            font-weight: 700;
+            font-size: rem(44);
+            line-height: rem(54);
+            letter-spacing: 0%;
+            color: var(--font-color)
+        }
+
+        & p:last-child {
+            font-weight: 400;
+            font-size: rem(14);
+            line-height: rem(30);
+            letter-spacing: 0%;
+            color: #656565;
+        }
+    }
+
+    &__right {
+        margin-left: auto;
+
+        & img {
+            max-width: rem(597);
+            max-height: rem(683);
+        }
+    }
+}
