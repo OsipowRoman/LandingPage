@@ -2,6 +2,8 @@
 @use "./libs/normalize.scss";
 @use "../src/fonts/fonts.scss";
 @use "./styles/blocks/header";
+@use "./styles/blocks/main";
+
 
 * {
     font-family: "Roboto";
