@@ -1,0 +1,88 @@
+@use "../../helpers/functions.scss" as *;
+@use "../variables.scss";
+
+.burger-section {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--accent-background);
+    margin-top: rem(200);
+    margin-bottom: rem(200) ;
+    max-height: rem(854);
+    overflow: hidden;
+
+    & p {
+        background-color: var(--accent-background);
+    }
+
+    &__left {
+        background-color: var(--accent-background);
+        color: var(--accent-font-color);
+        margin: rem(270) rem(110);
+
+        & p:first-child {
+            font-weight: 700;
+            font-size: rem(56);
+            line-height: rem(66);
+            letter-spacing: 0%;
+
+        }
+
+        & p:last-child {
+            font-weight: 400;
+            font-size: rem(14);
+            line-height: rem(30);
+            letter-spacing: 0%;
+
+        }
+
+        & a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: rem(206);
+            height: rem(73);
+            border-radius: rem(16);
+            border-width: 1px;
+            color: var(--accent-font-color);
+            background-color: var(--accent-color);
+            text-decoration: none;
+            border: 1px solid #FF5634
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: row;
+        gap: rem(30);
+        background-color: var(--accent-background);
+
+        &__first {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--accent-background);
+            gap: rem(30);
+            height: 100vh;
+
+            & img {
+                max-width: rem(323);
+                max-height: rem(305);
+            }
+        }
+
+        &__second {
+            display: flex;
+            position: relative;
+            top: 50px;
+            flex-direction: column;
+            background-color: var(--accent-background);
+            gap: rem(30);
+            height: 100vh;
+
+
+            & img {
+                max-width: rem(323);
+                max-height: rem(305);
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+@use "../../helpers/functions.scss" as *;
+@use "../variables.scss";
+
+
+.management-second {
+    display: flex;
+    flex-direction: row;
+    margin-left: rem(110);
+    margin-right: rem(110);
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        width: rem(570);
+        height: rem(480);
+        gap: (55);
+
+
+        &__card {
+            display: flex;
+            flex-direction: row;
+            gap: rem(28);
+
+            & div p:first-child {
+                font-weight: 400;
+                font-size: rem(24);
+                line-height: rem(34);
+                letter-spacing: 0%;
+                color: var(--font-color);
+            }
+
+            & div p:last-child {
+                font-weight: 400;
+                font-size: rem(14);
+                line-height: rem(30);
+                letter-spacing: 0%;
+                color: var(--grey-font-color);
+            }
+
+            & div p {
+                margin-bottom: rem(10);
+            }
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            gap: rem(32);
+            margin-top: rem(30);
+        }
+
+        &__text {
+
+            & h3 {
+                margin-bottom: rem(16);
+            }
+
+            & h3 {
+                font-weight: 400;
+                font-size: rem(44);
+                line-height: rem(54);
+                letter-spacing: 0%;
+                color: var(--font-color);
+            }
+
+            & p {
+                font-weight: 400;
+                font-size: rem(18);
+                line-height: rem(30);
+                letter-spacing: 0%;
+                color: var(--grey-font-color);
+            }
+        }
+    }
+
+    &__right {
+        
+        & div:first-of-type {
+            width: rem(600);
+            height: rem(689);
+            border-radius: rem(32);
+            background-color: var(--accent-color);
+        }
+    }
+}

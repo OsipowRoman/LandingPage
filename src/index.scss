@@ -6,6 +6,10 @@
 @use "./styles/blocks/main-footer";
 @use "./styles/blocks/delivery";
 @use "./styles/blocks/restaurant";
+@use "./styles/blocks/burger-section";
+@use "./styles/blocks/customers";
+@use "./styles/blocks/management";
+@use "./styles/blocks/management-second";
 
 * {
     font-family: "Roboto";
