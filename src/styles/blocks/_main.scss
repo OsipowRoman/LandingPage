@@ -6,22 +6,23 @@
     max-height: rem(1000);
     
     &__right {
-        position: static;
         margin-top: -32px;
         margin-left: auto;
 
         & :first-child {
-            width: rem(602);
-            height: rem(1003);
+            max-width: rem(602);
+            max-height: rem(1003);
+            object-fit: contain;
         }
         
         & img:last-child {
+            object-fit:scale-down;
             position: relative;
             top: -900px;
             right: rem(150);
             background: none;
-            width: rem(356);
-            height: rem(710);
+            max-width: rem(356);
+            max-height: rem(710);
         }
     } 
     

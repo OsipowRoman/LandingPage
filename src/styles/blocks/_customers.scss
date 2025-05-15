@@ -8,7 +8,7 @@
     &__title {
         text-align: center;
 
-        & p:first-child {
+        & h3 {
             font-weight: 400;
             font-size: rem(18);
             line-height: rem(20);
@@ -18,7 +18,7 @@
             color: var(--accent-color);
         }
 
-        & h3 {
+        & p:first-of-type {
             font-weight: 700;
             font-size: rem(44);
             line-height: rem(54);
@@ -44,7 +44,7 @@
         row-gap: rem(80);
         margin: rem(65) rem(24);
         
-
+    }
         &__item {
             max-width: rem(350);
             max-height: rem(260);
@@ -80,7 +80,7 @@
             width: rem(105);
             height: rem(90);
         }
-    }
+    
 
     &__buttons {
         align-items: center;

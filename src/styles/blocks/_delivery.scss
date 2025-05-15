@@ -6,14 +6,10 @@
     display: flex;
     flex-direction: column;
 
-    &::placeholder {
-        background-color: #FF5634;
-    }
-    
     &__header {
         text-align: center;
 
-       & p:first-child {
+       & h3 {
         color: var(--accent-color);
         font-weight: 400;
         font-size: 18px;
@@ -23,7 +19,7 @@
         text-transform: uppercase;
        }
 
-       & p:nth-child(2) {
+       & p:first-of-type {
         font-weight: 700;
         font-size: 44px;
         line-height: 53.99px;
@@ -55,7 +51,7 @@
             max-width: rem(350);
             max-height: rem(430);
 
-            & p:first-child {
+            & p:first-of-type {
                 font-weight: 400;
                 font-size: 28px;
                 line-height: 40.01px;
@@ -75,6 +71,12 @@
         }
     }
 
+    &__group {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: rem(27);
+    }
 
     &__button {
         text-decoration: none;
@@ -104,12 +106,5 @@
             color: #FFF;
             border: 1px solid #FF5634;
         }
-    }
-
-    &__group {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: rem(27);
     }
 }

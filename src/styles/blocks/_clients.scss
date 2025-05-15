@@ -1,0 +1,104 @@
+@use "../../helpers/functions.scss" as *;
+@use "../variables.scss";
+
+.clients {
+    max-height: rem(1200);
+    
+    &__container {
+        background-color: var(--clients-background-color);
+        padding: rem(200) rem(85);
+        display: flex;
+        flex-direction: column;
+        gap: rem(48);
+
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:flex-end;
+        background-color: var(--clients-background-color);
+
+        &__title {
+            background-color: var(--clients-background-color);
+            
+            & h3 {
+                font-weight: 400;
+                font-size: rem(44);
+                line-height: rem(54);
+                letter-spacing: 0%;
+                color: var(--font-color);
+                margin-bottom: rem(22);
+                background-color: var(--clients-background-color);
+
+            }
+
+            & p {
+                font-weight: 400;
+                font-size: rem(14);
+                line-height: rem(30);
+                letter-spacing: 0%;
+                color: var(--grey-font-color);
+                background-color: var(--clients-background-color);
+
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            gap: rem(27);
+            background-color: var(--clients-background-color);
+
+            & a {
+                text-decoration: none;
+                padding: rem(26) rem(40);
+                border: 1px solid var(--border-color);
+                background-color: var(--background-color);
+                box-shadow: 0px 2px 6px 0px #1010100A;
+                border-radius: rem(16);
+                color: var(--font-color);
+
+                &:last-child {
+                    color: var(--accent-font-color);
+                    background-color: var(--color-accent);
+                    border: 1px solid var(--color-accent)
+                }
+            }
+        }
+    }
+
+    &__card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: rem(28);
+        row-gap: rem(28);
+        background-color: var(--clients-background-color);
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: rem(24);
+            max-width: rem(390);
+            max-height: rem(290);
+            border-radius: rem(28);
+            border-width: 1px;
+            border: 1px solid #EDEDED;
+            background-color: var(--background-color);
+            padding: rem(40) rem(30);
+
+            &__text {
+                font-weight: 400;
+                font-size: rem(18);
+                line-height: rem(30);
+                letter-spacing: 0%;
+                color: var(--grey-font-color);
+            }
+
+            & div:first-child {
+                display: flex;
+                gap: rem(10);
+            }
+        }
+    }
+}

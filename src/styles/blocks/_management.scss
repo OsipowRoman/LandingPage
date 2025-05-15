@@ -9,10 +9,9 @@
     margin-right: rem(110);
     margin-bottom: rem(400);
     gap: rem(54);
-    width: 569.265625;
-    height: rem(482);
+    max-height: rem(482);
+    justify-content: space-between;
     
-
         &__left {
 
             & img:first-of-type {
@@ -69,6 +68,13 @@
             gap: rem(25);
             align-items: center;  
 
+            & div {
+                width: 72;
+                height: 72;
+            }
+
+        }
+
             &__text {
                 & p:first-child {
                     font-weight: 400;
@@ -86,11 +92,6 @@
                     color: var(--grey-font-color);
                 }
             }
-
-        }
-
-
-    
             
             &__title {
 

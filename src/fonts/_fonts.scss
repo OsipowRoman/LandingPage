@@ -1,4 +1,8 @@
 @font-face {
     font-family: "Roboto";
-    src: url(./fonts/Roboto-Regular.woff2);
-}
+    src: 
+      url(./fonts/Roboto-Regular.woff2) format('woff2');
+    font-style: normal;
+    font-display: swap;
+  }
+  

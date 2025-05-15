@@ -19,11 +19,13 @@
         color: var(--accent-font-color);
         margin: rem(270) rem(110);
 
-        & p:first-child {
+        & h3 {
             font-weight: 700;
             font-size: rem(56);
             line-height: rem(66);
             letter-spacing: 0%;
+            background: none;
+            margin-bottom: rem(15);
 
         }
 

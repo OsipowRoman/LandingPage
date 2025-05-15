@@ -10,10 +10,10 @@
     <header class="header">
         <div class="header__logo">
             <a href="#">
-                <img src="./images/icons/brand.png" width="160" height="48" alt="">
+                <img src="./images/icons/brand.png" loading="lazy" width="160" height="48" alt="Delivery icon">
             </a>
         </div>
-            <nav class="header__nav--active">
+            <nav role="navigation" class="header__nav">
                 <ul>
                     <li>
                         <a href="#" title="">
@@ -41,12 +41,12 @@
                         </a>
                     </li>
                     <li>
-                        <a class="header__button" href="#" title="">
+                        <a class="header__button hover" href="#" title="">
                             Download app
                         </a>
                     </li>
                     <li>
-                        <a class="header__button--active" href="#" title="">
+                        <a class="header__button header__button--active hover" href="#" title="">
                             Register
                         </a>
                     </li>
@@ -57,14 +57,14 @@
 
     <!-- Секция main сайта исправить сжатие картинки при изменении разиера окна видимости -->
 
-    <main class="main">
+    <main class="main"> 
         <div class="main__left">
             <h2 class="main__left__subtitle">Food Delivery Service</h2>
             <h2 class="main__left__title">Delicious food at your fingertips</h2>
             <p class="main__left__text">A ultricies eget condimentum sed faucibus enim maecenas variusd dolor sitegestas hendrerit et maecenas habitant mattis</p>
             <div class="main__left__group">
-                <a class="main__left__button--active" href="#">Register restaurant</a>
-                <a class="main__left__button" href="#">Download app</a>
+                <a class="main__left__button main__left__button--active  hover" href="#">Register restaurant</a>
+                <a class="main__left__button hover" href="#">Download app</a>
             </div>
             <hr class="main__left__break">
             <div class="main__left__advantages">
@@ -83,8 +83,8 @@
             </div>
         </div>
         <div class="main__right">
-            <img src="./images/img/mainTable.png" alt="">
-            <img src="./images/img/mainPhone.png" alt="">
+            <img width="602" height="1003" loading="lazy" src="./images/img/mainTable.png" alt="">
+            <img width="356" height="710" loading="lazy" src="./images/img/mainPhone.png" alt="">
         </div> 
     </main>
 
@@ -92,10 +92,10 @@
     <section class="main-footer">
         <p>Trusted by 5,000+ restaurants around the world</p>
             <div>
-                <img src="./images/icons/restaurant.png" alt="">
-                <img src="./images/icons/restaurant2.png" alt="">
-                <img src="./images/icons/restaurant3.png" alt="">
-                <img src="./images/icons/restaurant4.png" alt="">
+                <img width="239" height="43" loading="lazy" src="./images/icons/restaurant.png" alt="restaurant icon">
+                <img width="239" height="43" loading="lazy" src="./images/icons/restaurant2.png" alt="restaurant icon">
+                <img width="239" height="43" loading="lazy" src="./images/icons/restaurant3.png" alt="restaurant icon">
+                <img width="239" height="43" loading="lazy" src="./images/icons/restaurant4.png" alt="restaurant icon">
             </div>
     </section>
 
@@ -105,7 +105,7 @@
 
     <section  class="delivery">
         <div class="delivery__header">
-            <p>How it works</p>
+            <h3>How it works</h3>
             <p>Our simple, yet efficient <br> delivery system</p>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam facilisis pellentesque</p>
             
@@ -113,24 +113,24 @@
 
         <div class="delivery__card">
             <div class="delivery__card__item">
-                <img src="./images/img/delivery.png" alt="">
+                <img width="218" height="218" loading = "lazy" src="./images/img/delivery.png" alt="">
                 <p>1. Create a free account <br> at Deliver X today</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam</p>
             </div>
             <div class="delivery__card__item">
-                <img src="./images/img/delivery1.png" alt="">
+                <img width="218" height="218" loading = "lazy" src="./images/img/delivery1.png" alt="">
                 <p>2. Order from your <br>favorite restaurant</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam</p>
             </div>
             <div class="delivery__card__item">
-                <img src="./images/img/delivery2.png" alt="">
+                <img width="218" height="218" loading = "lazy" src="./images/img/delivery2.png" alt="">
                 <p>3. Receive right in your <br>house, hassle-free</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam</p>
             </div>
         </div>
         <div class="delivery__group">
-            <a class="delivery__button--active" href="#">Register restaurant</a>
-            <a class="delivery__button" href="#">Download app</a>
+            <a class="delivery__button delivery__button--active hover" href="#">Register restaurant</a>
+            <a class="delivery__button hover" href="#">Download app</a>
         </div>
     </section>
 
@@ -138,63 +138,63 @@
 
     <!-- Секция ресторан -->
 
-    <section class="restaurant">
+    <section class="restaurant"> 
         <div class="restaurant__left">
             <p>Learn why Deliver X is <br> great for your restaurant</p>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit<br> phasellus mollis sit aliquam sit nullam</p>
                 <div class="restaurant__left__advantages">
-                    <div class="restaurant__left__advantages__item">
-                        <div><img src="./images/img/restaurant_adv1.png" alt=""></div>
+                    <div class="restaurant__item">
+                        <div><img loading="lazy" src="./images/img/restaurant_adv1.png" alt="Delivery icon"></div>
                         <p>Fast deliveries</p>
                         <p>Lorem ipsum dolor sit amet consecte</p>
                     </div>
-                    <div class="restaurant__left__advantages__item">
-                        <div><img src="./images/img/restaurant_adv2.png" alt=""></div>
+                    <div class="restaurant__item">
+                        <div><img loading="lazy" src="./images/img/restaurant_adv2.png" alt="Certified rides"></div>
                         <p>Certified riders</p>
                         <p>Lorem ipsum dolor sit amet consecte</p>
                     </div>
-                    <div class="restaurant__left__advantages__item">
-                        <div><img src="./images/img/restaurant_adv3.png" alt=""></div>
+                    <div class="restaurant__item">
+                        <div><img loading="lazy" src="./images/img/restaurant_adv3.png" alt="Payments"></div>
                         <p>Instant payments</p>
                         <p>Lorem ipsum dolor sit amet consecte</p>
                     </div>
-                    <div class="restaurant__left__advantages__item">
-                        <div><img src="./images/img/restaurant_adv4.png" alt=""></div>
+                    <div class="restaurant__item">
+                        <div><img loading="lazy" src="./images/img/restaurant_adv4.png" alt="Low fees"></div>
                         <p>Low fees</p>
                         <p>Lorem ipsum dolor sit amet consecte</p>
                     </div>
                 </div>
         </div>
         <div class="restaurant__right">
-            <img src="./images/img/restaurant_adv5.png" alt="">
+            <img loading="lazy" src="./images/img/restaurant_adv5.png" alt="">
         </div>
     </section>
 
- <!-- Секция доставки -->
+ <!-- Секция доставки ps переделать эти кнопки под общие стили через миксины -->
 
     <div class="delivery__group">
-        <a class="delivery__button--active" href="#">Register restaurant</a>
-        <a class="delivery__button" href="#">Download app</a>
+        <a class="delivery__button delivery__button--active hover" href="#">Register restaurant</a>
+        <a class="delivery__button hover" href="#">Download app</a>
     </div>
 
     <!-- Секция доставки переделать расположение картинок -->
 
     <section class="burger-section">
         <div class="burger-section__left">
-            <p>A delicious burger is<br> one tap away!</p>
+            <h3>A delicious burger is<br> one tap away!</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit<br> nullam</p>
-            <a href="#">Download app</a>
+            <a class="hover" href="#">Download app</a>
         </div>
         <div class="burger-section__right">
             <div class="burger-section__right__first">
-                <img src="./images/img/burger.jpg" alt="">
-                <img src="./images/img/burger1.jpg" alt="">
-                <img src="./images/img/burger2.jpg" alt="">
+                <img loading="lazy" src="./images/img/burger.jpg" alt="burger icon">
+                <img loading="lazy" src="./images/img/burger1.jpg" alt="burger icon">
+                <img loading="lazy" src="./images/img/burger2.jpg" alt="burger icon">
             </div>
             <div class="burger-section__right__second">
-                <img src="./images/img/burger3.jpg" alt="">
-                <img src="./images/img/burger4.jpg" alt="">
-                <img src="./images/img/burger5.jpg" alt="">
+                <img loading="lazy" src="./images/img/burger3.jpg" alt="burger icon">
+                <img loading="lazy" src="./images/img/burger4.jpg" alt="burger icon">
+                <img loading="lazy" src="./images/img/burger5.jpg" alt="burger icon">
                 
             </div>
         </div>
@@ -203,45 +203,45 @@
     <!-- Секция покупатели -->
     <section class="customers">
         <div class="customers__title">
-            <p>Our Features</p>
-            <h3>Learn why Deliver is great for<br>customers too!</h3>
+            <h3>Our Features</h3>
+            <p>Learn why Deliver is great for<br>customers too!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam facilisis pellentesque</p>
         </div>
         <div class="customers__card">
-            <div class="customers__card__item">
-                <img src="./images/icons/customer1.png" alt="">
+            <div class="customers__item">
+                <img loading="lazy" src="./images/icons/customer1.png" alt="Express delivery">
                 <p>Express delivery</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
             </div>
-            <div class="customers__card__item">
-                <img src="./images/icons/customer2.png" alt="">
-                <p>Express delivery</p>
+            <div class="customers__item">
+                <img loading="lazy" src="./images/icons/customer2.png" alt="Safely delivered">
+                <p>Safely delivered</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
             </div>
-            <div class="customers__card__item">
-                <img src="./images/icons/customer3.png" alt="">
-                <p>Express delivery</p>
+            <div class="customers__item">
+                <img loading="lazy" src="./images/icons/customer3.png" alt="Special discounts">
+                <p>Special discounts</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
             </div>
-            <div class="customers__card__item">
-                <img src="./images/icons/customer4.png" alt="">
-                <p>Express delivery</p>
+            <div class="customers__item">
+                <img loading="lazy" src="./images/icons/customer4.png" alt="More dishes">
+                <p>More dishes</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
             </div>
-            <div class="customers__card__item">
-                <img src="./images/icons/customer5.png" alt="">
-                <p>Express delivery</p>
+            <div class="customers__item">
+                <img loading="lazy" src="./images/icons/customer5.png" alt="Exclusive restaurants">
+                <p>Exclusive restaurants</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
             </div>
-            <div class="customers__card__item">
-                <img src="./images/icons/customer6.png" alt="">
-                <p>Express delivery</p>
+            <div class="customers__item">
+                <img loading="lazy" src="./images/icons/customer6.png" alt="and much more!">
+                <p>and much more!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
             </div>
         </div>
         <div class="customers__buttons">
-            <a href="#">Register restaurant</a>
-            <a href="#">Download app</a>
+            <a class="hover" href="#">Register restaurant</a>
+            <a class="hover" href="#">Download app</a>
         </div>
 
     </section>
@@ -251,8 +251,8 @@
     <section class="management">
             <div class="management__left">
                 <div></div>
-                <img src="./images/img/management1.jpg" alt="">
-                <img src="./images/img/management2.jpg" alt="">
+                <img loading="lazy" src="./images/img/management1.jpg" alt="">
+                <img loading="lazy" src="./images/img/management2.jpg" alt="">
             </div>
             <div class="management__right">
                     <div class="management__right__title">
@@ -262,15 +262,19 @@
 
                 <div class="management__right__container"></div>
                     <div class="management__right__card">
-                        <div><img src="./images/icons/management-icon.png" alt=""></div>
-                        <div class="management__right__card__text">
+                        <div>
+                            <img width="72" height="72" loading="lazy" src="./images/icons/management-icon.png" alt="Order management">
+                        </div>
+                        <div class="management__right__text">
                             <p>Order management</p>
                             <p>Aliquam vestibulum morbi blandit cursus risus atomol ultrices proin gravida<br> hendrerit lectusa.</p>
                         </div>
                     </div>
                     <div class="management__right__card">
-                        <div><img src="./images/icons/management-icon1.png" alt=""></div>
-                        <div class="management__right__card__text">
+                        <div>
+                            <img width="72" height="72" loading="lazy" src="./images/icons/management-icon1.png" alt="Pos integration">
+                        </div>
+                        <div class="management__right__text">
                             <p>POS integration</p>
                             <p>Lobortis elementum nibh tellus molestie nunc nonolfu celerisque fermentum dui<br> faucibus inomle.<p>
                         </div>
@@ -279,7 +283,7 @@
             </div>
     </section>
 
-
+    <!-- Секция seconnd-menedement ps сделать стили с предыдущей секцией как блок-->
     <section class="management-second">
         <div class="management-second__left">
             <div class="management-second__left__text">
@@ -288,14 +292,14 @@
             </div>
                 <div class="management-second__left__container">
                     <div class="management-second__left__card">
-                       <div><img src="./images/icons/management-second-icon.png" alt=""></div>
+                       <div><img loading="lazy" src="./images/icons/management-second-icon.png" alt=""></div>
                        <div>
                             <p>Order from app</p>
                             <p>Aliquam vestibulum morbi blandit cursus risus atomol ultrices proin gravida</p> 
                        </div>
                     </div>
                     <div class="management-second__left__card">
-                        <div><img src="./images/icons/management-second-icon1.png" alt=""></div>
+                        <div><img loading="lazy" src="./images/icons/management-second-icon1.png" alt=""></div>
                         <div>
                             <p>Order from app</p>
                             <p>Aliquam vestibulum morbi blandit cursus risus atomol ultrices proin gravida</p>
@@ -305,12 +309,183 @@
             
         </div>
         <div class="management-second__right">
-            <div></div>
+            <div>
+                <img src="./images/img/manager-second2.jpg" alt="">
+                <img src="./images/img/manager-second1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция clients -->
+    <section class="clients">
+        <div class="clients__container">
+            <div class="clients__header">
+                <div class="clients__header__title">
+                    <h3>What our clients say</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum<br> tempus hac</p>
+                </div>
+                <div class="clients__header__buttons">
+                        <a class="hover" href="#">Register restaurant</a>
+                        <a class="hover" href="#">Download app</a>
+                </div>
+            </div>
+            <div class="clients__card">
+                <div class="clients__card__item">
+                    <div>
+                        <img loading="lazy" src="./images/img/clients/client1.jpg" alt="John Carter photo">
+                        <div>
+                            <p>John Carter</p>
+                            <p>Echo Park</p>
+                        </div>
+                    </div>
+                    <p class="clients__card__item__text">“Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque</p>
+                    
+                </div>
+                <div class="clients__card__item">
+                    <div>
+                        <img loading="lazy" src="./images/img/clients/client2.jpg" alt="Sophie Moore photo">
+                        <div>
+                            <p>Sophie Moore</p>
+                            <p>Hollywood Hills</p>
+                        </div>
+                    </div>
+                    <p class="clients__card__item__text">“Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque</p>
+                </div>
+                <div class="clients__card__item">
+                    <div>
+                        <img loading="lazy" src="./images/img/clients/client3.jpg" alt="Matt Cannon photo">
+                        <div>
+                            <p>Matt Cannon</p>
+                            <p>Little Tokyo</p>
+                        </div>
+                    </div>
+                   <p class="clients__card__item__text">“Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque</p>
+                </div>
+                <div class="clients__card__item">
+                    <div>
+                            <img loading="lazy" src="./images/img/clients/client4.jpg" alt="Lily Woods photo">
+                        <div>
+                            <p>Lily Woods</p>
+                            <p>Melsore Avenue</p>
+                        </div>
+                    </div>
+                    <p class="clients__card__item__text">“Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque</p>
+                </div>
+                <div class="clients__card__item">
+                   <div>
+                        <img loading="lazy" src="./images/img/clients/client5.jpg" alt="Andy Smith photo">
+                        <div>
+                            <p>Andy Smith</p>
+                            <p>Koreatown</p>
+                        </div>
+                   </div>
+                   <p class="clients__card__item__text">“Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque</p>
+                </div>
+                <div class="clients__card__item">
+                  <div>
+                        <img loading="lazy" src="./images/img/clients/client6.jpg" alt="Emily Williams photo">
+                        <div>
+                            <p>Emily Williams</p>
+                            <p>Chinatown</p>
+                        </div>
+                    </div>
+                    <p class="clients__card__item__text">“Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="register">
+        <div class="register__left">
+            <h3>Start attracting more <br> clients today!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit <br> aliquam sit nullam neque ultrices.</p>
+            <a class="hover" href="#">Register restaurant</a>
+        </div>
+        <div class="register__right">
+                <img loading="lazy" src="./images/img/register/register1.png" alt="">
+                <img loading="lazy" src="./images/img/register/register2.png" alt="">
+        </div>
+    </section>
+    <!-- Секция register footer -->
+    <section class="register__footer">
+        <div>
+            <img loading="lazy" src="./images/icons/brand.png" alt="Deliveri X icon">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor<br> incididunt ut.</p>
+        </div>
+        <div>
+            <a class="hover" href="#">Download for iOS</a>
+            <a class="hover" href="#">Download for Android</a>
         </div>
     </section>
 
 
-    <!-- Уменьшить размер остальных фотографий -->
+    <footer class="footer">
+        <div class="footer__menu">
+            <p>Menu</p>
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Blog posts</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Plan single</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footer__pages">
+            <p>Utility pages</p>
+            <ul>
+                <li><a href="#">Start here</a></li>
+                <li><a href="#">Styleguide</a></li>
+                <li><a href="#">Password protected</a></li>
+                <li><a href="#">404 Not found</a></li>
+                <li><a href="#">Licenses</a></li>
+                <li><a href="#">Changelog</a></li>
+            </ul>
+        </div>
+        <div class="footer__available">
+            <div>
+                <p>Available in</p>
+            </div>
+            <div class="footer__available__cards">
+                <div>
+                    <img loading="lazy" src="./images/icons/footer/footer1.png" alt="">
+                    <p>San Francisco, CA</p>
+                </div>
+                <div>
+                    <img loading="lazy" src="./images/icons/footer/footer2.png" alt="">
+                    <p>New York, NY</p>
+                </div>
+                <div>
+                    <img loading="lazy" src="./images/icons/footer/footer3.png" alt="">
+                    <p>Los Angeles, CA</p>
+                </div>
+                <div>
+                    <img loading="lazy" src="./images/icons/footer/footer4.png" alt="">
+                    <p>Seattle, WA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Уменьшить размер остальных фотографий 
+        Сделать стили ссылок общими вывести их стили в миксин
+        Разобраться с размерами картинок   
+    -->
+
+    <footer class="copyright">
+        <p>Copyright © Deliver X | Designed by</p>
+        <p class="">BRIX Templates</p>
+        <p>- Powered by</p>
+        <p>Webflow</p>
+    </footer>
 
 </body>
 <script src="./index.js"></script>

@@ -1,0 +1,73 @@
+@use "../../helpers/functions.scss" as *;
+@use "../variables.scss";
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    gap: rem(163);
+    margin-left: rem(110);
+    margin-right: rem(110);
+    width: 100%;
+    height: rem(484);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: rem(100) 0px;
+
+    &__menu {
+
+        & div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: rem(40);
+        }
+    }
+    
+    & ul {
+        list-style: none;
+        padding-left: 0px;
+    }
+
+    & a {
+        display: flex;
+        text-decoration: none;
+        color: var(--grey-font-color);
+        margin-bottom: rem(2);
+
+        &:hover {
+            position: relative;
+            color: black;
+            transition-duration: 0,8s;
+            padding-bottom: 3px;
+            transform: translateX(-7px);
+        }
+    }
+
+    & p {
+        font-weight: 400;
+        font-size: rem(20);
+        line-height: rem(22);
+        letter-spacing: 0%;
+        color: var(--font-color);
+    }
+
+    &__available {
+
+        &__cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: rem(29);
+            row-gap: rem(13);
+            margin-top: rem(30);
+
+            & div {
+                display: flex;
+                flex-direction: row;
+                gap: rem(18);
+                align-items: center;
+                justify-content: start;
+            }
+        }
+    }
+
+}

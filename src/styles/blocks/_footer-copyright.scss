@@ -1,0 +1,20 @@
+@use "../../helpers/functions.scss" as *;
+@use "../variables.scss";
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    gap: rem(10);
+    width: 100%;
+    height: 95;
+    padding-top: rem(33);
+    padding-bottom: rem(33);
+    color: var(--grey-font-color);
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+
+    & p {
+        margin-bottom: 0px;
+    }
+}

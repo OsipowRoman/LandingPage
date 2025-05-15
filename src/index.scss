@@ -1,6 +1,6 @@
 @use "./styles/variables";
 @use "./libs/normalize.scss";
-@use "../src/fonts/fonts.scss";
+@use "../src/fonts/fonts.scss" as *;
 @use "./styles/blocks/header";
 @use "./styles/blocks/main";
 @use "./styles/blocks/main-footer";
@@ -10,9 +10,28 @@
 @use "./styles/blocks/customers";
 @use "./styles/blocks/management";
 @use "./styles/blocks/management-second";
+@use "./styles/blocks/clients";
+@use "./styles/blocks/register";
+@use "./styles/blocks/footer";
+@use "./styles/blocks/footer-copyright";
 
 * {
-    font-family: "Roboto";
     background-color: var(--background-color);
+}
+
+body {
+    font-family: "Roboto";
+
+}
+
+.hover {
+
+    &:hover {
+        position: relative;
+        transition-duration: 0,3s;
+        box-shadow: 1px 3px 1px grey;
+        transform: translateX(-3px);
+        transform: translateY(-3px);
+    }
 }
 

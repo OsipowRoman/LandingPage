@@ -7,6 +7,9 @@
     flex-direction: row;
     margin-left: rem(110);
     margin-right: rem(110);
+    margin-bottom: rem(200);
+    justify-content: space-between;
+    gap: rem(54);
 
     &__left {
         display: flex;
@@ -47,6 +50,11 @@
             flex-direction: column;
             gap: rem(32);
             margin-top: rem(30);
+
+            & :nth-child(1){
+                margin-left: auto;
+            }
+            
         }
 
         &__text {
@@ -74,6 +82,23 @@
     }
 
     &__right {
+
+        & div img:first-child {
+            border-radius: rem(50);
+            left: rem(180);
+            top: rem(70);
+
+        }
+        
+        & div img:last-child {
+            border-radius: rem(65);
+            bottom: rem(450);
+            left: rem(100);
+        }
+
+        & div img {
+            position: relative;
+        }
         
         & div:first-of-type {
             width: rem(600);
