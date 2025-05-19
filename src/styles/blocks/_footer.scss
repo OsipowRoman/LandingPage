@@ -7,15 +7,17 @@
     gap: rem(163);
     margin-left: rem(110);
     margin-right: rem(110);
-    width: 100%;
-    height: rem(484);
+    max-height: rem(484);
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
     padding: rem(100) 0px;
+    align-content:baseline;
+    justify-content: center;
+    justify-content: space-between;
 
     &__menu {
 
-        & div {
+        & nav {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -43,7 +45,7 @@
         }
     }
 
-    & p {
+    & h4 {
         font-weight: 400;
         font-size: rem(20);
         line-height: rem(22);

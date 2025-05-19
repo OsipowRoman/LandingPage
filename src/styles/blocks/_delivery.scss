@@ -9,7 +9,7 @@
     &__header {
         text-align: center;
 
-       & h3 {
+       & h2 {
         color: var(--accent-color);
         font-weight: 400;
         font-size: 18px;
@@ -19,7 +19,7 @@
         text-transform: uppercase;
        }
 
-       & p:first-of-type {
+       & h3 {
         font-weight: 700;
         font-size: 44px;
         line-height: 53.99px;

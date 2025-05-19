@@ -16,21 +16,23 @@
 
             & img:first-of-type {
                 position: relative;
-                width: rem(349);
-                height: rem(704);
+                max-width: rem(349);
+                max-height: rem(704);
                 top: -600px;
                 left: rem(60);
                 border-radius: rem(57);
+                object-fit: contain;
 
             }
 
             & img:last-of-type {
                 position: relative;
-                width: rem(341);
-                height: rem(341);
+                max-width: rem(341);
+                max-height: rem(341);
                 border-radius: rem(61);
                 top: -1150px;
                 left: rem(180);
+                object-fit: contain;
 
             }
             
@@ -47,31 +49,28 @@
 
     &__right {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
         gap: rem(30);
+        margin-top: auto;
 
         &__container {
             display: flex;
             flex-direction: column;
             gap: rem(60);
-            background-color: black;
+           
         }
 
         
         &__card {
             display: flex;
             flex-direction: row;
-            width: rem(470);
-            height: rem(100);
+            max-width: rem(470);
+            max-height: rem(100);
             gap: rem(25);
             align-items: center;  
-
-            & div {
-                width: 72;
-                height: 72;
-            }
 
         }
 
@@ -82,6 +81,8 @@
                     line-height: rem(34);
                     letter-spacing: 0%;
                     color: var(--font-color);
+                    margin-bottom: rem(14);
+
                 }
     
                 & p:last-child {
@@ -90,6 +91,7 @@
                     line-height: rem(30);
                     letter-spacing: 0%;
                     color: var(--grey-font-color);
+                    margin-bottom: rem(6);
                 }
             }
             
@@ -101,6 +103,7 @@
                     line-height: rem(54);
                     letter-spacing: 0%;
                     color: var(--font-color);
+                    margin-bottom: rem(10);
                 }
 
                 & p {

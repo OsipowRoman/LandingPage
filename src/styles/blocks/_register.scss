@@ -16,8 +16,8 @@
         flex-direction: column;
         gap: rem(25);
         background-color: var(--accent-background);
-        width: rem(580);
-        height: rem(500);
+        max-width: rem(580);
+        max-height: rem(500);
 
         
         & h3 {
@@ -86,7 +86,7 @@
         justify-content: space-between;
         align-items: center;
         margin: rem(70) rem(110);
-        height: rem(150);
+        max-height: rem(150);
         max-width: 100%;
         top: rem(70);
         background-color: var(--background-color);

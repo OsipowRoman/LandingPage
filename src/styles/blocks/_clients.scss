@@ -87,6 +87,12 @@
             background-color: var(--background-color);
             padding: rem(40) rem(30);
 
+            & div:first-child {
+                display: flex;
+                gap: rem(10);
+            }
+        }
+
             &__text {
                 font-weight: 400;
                 font-size: rem(18);
@@ -94,11 +100,5 @@
                 letter-spacing: 0%;
                 color: var(--grey-font-color);
             }
-
-            & div:first-child {
-                display: flex;
-                gap: rem(10);
-            }
-        }
     }
 }
